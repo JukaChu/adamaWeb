@@ -26,10 +26,10 @@ jQuery(function($) {
     // поворот экрана
 
     $(window).on('scroll', function () {
-        const position = $(this).scrollTop();
+        const position = $(this).scrollTop() + 300;
 
         section.each(function () {
-            const top = $(this).offset().top - navHeight - 5,
+            const top = $(this).offset().top,
                 bottom = top + $(this).outerHeight();
 
             if (position >= top && position <= bottom) {
@@ -46,7 +46,7 @@ jQuery(function($) {
         const id = $(this).attr('href');
 
         $('html, body').animate({
-            scrollTop: $(id).offset().top - navHeight
+            scrollTop: $(id).offset().top - 60
         }, 487);
 
         return false;
