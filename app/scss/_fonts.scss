@@ -1,17 +1,24 @@
 @font-face {
   font-family: 'Brown';
-  src: url('../fonts/brownPro/BrownProBold.otf');
+  src: url('../fonts/brownPro/BrownPro-Bold.otf');
   src: local('BrownProBold'),
-  url('../fonts/brownPro/BrownProBold.otf') format('opentype');
+  url('../fonts/brownPro/BrownPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}@font-face {
+  font-family: 'BrownAlt';
+  src: url('../fonts/brownPro/BrownPro-BoldAlt.otf');
+  src: local('BrownProBold'),
+  url('../fonts/brownPro/BrownPro-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Brown';
-  src: url('../fonts/brownPro/BrownProLight.otf');
+  src: url('../fonts/brownPro/BrownPro-Light.otf');
   src: local('BrownProLight'),
-  url('../fonts/brownPro/BrownProLight.otf') format('opentype');
+  url('../fonts/brownPro/BrownPro-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
