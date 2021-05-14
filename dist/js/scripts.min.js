@@ -26,7 +26,7 @@ jQuery(function($) {
     // поворот экрана
 
     $(window).on('scroll', function () {
-        const position = $(this).scrollTop() + 200;
+        const position = $(this).scrollTop() + 150;
 
         section.each(function () {
             const top = $(this).offset().top,

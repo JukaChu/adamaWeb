@@ -229,8 +229,7 @@
         font-size: 5.0000vw;
         line-height: 5.5556vw;
         margin-bottom: 4.4444vw;
-
-        svg {
+        &::before {
           width: 8.3083vw;
           height: 8.3333vw;
           margin-left: 3.9167vw;
@@ -448,6 +447,7 @@
     transform: translate(-50%, 0);
     width: 70.0000vw;
     height: 15.5556vw;
+    z-index: 100;
 
     &.hidden {
       display: none;
