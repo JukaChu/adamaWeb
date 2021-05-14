@@ -487,4 +487,32 @@
       margin-left: 2.3611vw;
     }
   }
+  .wrapper.wrapper--thanks {
+    background:  url('../img/mob-thanks-3.png') no-repeat center bottom, #752157;
+
+    background-size: 533.3333vw;
+  }
+  .thanks-block {
+    background: none;
+
+  }
+  .thanks-text {
+    max-width: 88.8889vw;
+    h2 {
+      font-size: 8.8889vw;
+      line-height: 9.4444vw;
+      max-width: 45.0000vw;
+      padding-bottom: 3.0556vw;
+    }
+    p {
+      font-size: 6.6667vw;
+      line-height: 7.2222vw;
+      padding-top: 3.0556vw;
+      padding-right: 5.5556vw;
+      &::before {
+        height: 0.8333vw;
+        top: -0.8333vw;
+      }
+    }
+  }
 }
