@@ -130,6 +130,13 @@ function ifVideoOpenedOnPage() {
     } else {
         videoOpener.addEventListener('click', (e) => {
             e.preventDefault();
+            let dataType = videoOpener.dataset.videoType;
+            let dataSrc = videoOpener.dataset.videoModal;
+
+            let videoContainer = videoModal.querySelector(`.iframe--${dataType}`);
+            videoContainer.classList.add('active');
+            videoContainer.src = dataSrc;
+
             document.body.classList.add('no-scroll');
             videoModal.classList.add('open');
         });
@@ -137,10 +144,17 @@ function ifVideoOpenedOnPage() {
         closeModal.addEventListener('click', () => {
             closeModal.closest('.modal-window').classList.remove('open');
             document.body.classList.remove('no-scroll');
+            let videoContainer = videoModal.querySelector(`.iframe.active`);
+            videoContainer.classList.remove('active');
+            videoContainer.src = '';
+
         });
         videoModal.addEventListener('click', () => {
             videoModal.classList.remove('open');
             document.body.classList.remove('no-scroll');
+            let videoContainer = videoModal.querySelector(`.iframe.active`);
+            videoContainer.classList.remove('active');
+            videoContainer.src = '';
         });
         videoModal.querySelector('.modal-container').addEventListener('click', (e) => {
             e.stopPropagation();

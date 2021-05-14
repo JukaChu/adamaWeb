@@ -50,7 +50,7 @@
                     </a>
 
                 </div>
-                <div  id="benefits" class="benefits follow-class">
+                <div id="benefits" class="benefits follow-class">
                     <span>היתרונות הגדולים</span>
                     <p dir="rtl"> הEOS הוא מדביר ירוק סופר אפקטיבי
                         מבוסס שמן מינרלי עם תו תקן קוריאני.<br>
@@ -64,7 +64,7 @@
                         <li><p>מגוון רחב של שילובים עם תכשירים אחרים</p></li>
                     </ul>
                 </div>
-                <div  id="pests" class="pests-list follow-class">
+                <div id="pests" class="pests-list follow-class">
                     <div class="animated-bugs">
                         <img src="./img/bug-1.svg" alt="">
                         <img src="./img/bug-2.svg" alt="">
@@ -98,7 +98,7 @@
                     </ul>
 
                 </div>
-                <div  id="cultures" class="cultures follow-class">
+                <div id="cultures" class="cultures follow-class">
                     <span>לאילו גידולים הוא מתאים?</span>
                     <ul>
 
@@ -118,20 +118,29 @@
                             <div class="img"><img src="./img/apple-icon.svg" alt=""></div>
                             אפרסמון
                         </li>
-                        <li><div class="img"><img src="./img/cabbage-icon.svg" alt=""></div>חציל</li>
-                        <li><div class="img"><img src="./img/tomato-icon.svg" alt=""></div>אפרסמון</li>
-                        <li><div class="img"><img src="./img/trav-icon.svg" alt=""></div>פטרוזיליה</li>
-
+                        <li>
+                            <div class="img"><img src="./img/cabbage-icon.svg" alt=""></div>
+                            חציל
+                        </li>
+                        <li>
+                            <div class="img"><img src="./img/tomato-icon.svg" alt=""></div>
+                            אפרסמון
+                        </li>
+                        <li>
+                            <div class="img"><img src="./img/trav-icon.svg" alt=""></div>
+                            פטרוזיליה
+                        </li>
 
 
                     </ul>
                 </div>
-                <div  id="experiments" class="experiments follow-class">
+                <div id="experiments" class="experiments follow-class">
                     <span>ניסויי שדה</span>
                     <p dir="rtl"> רגלון הינו קוטל עשבים מקבוצת הביפירידלים
-                         והינו יעיל במיוחד כקוטל עשבים רחבי עלים.
+                        והינו יעיל במיוחד כקוטל עשבים רחבי עלים.
                         ניתן במינון 150-500סמ"ק/ד.'<br>
-                    </p><p>
+                    </p>
+                    <p>
                         אז על רגל אחת למה רגלון?<br>
                         פועל על הרקמות הירוקות של הצמחים וגורם
                         לתמותתם. <br>
@@ -145,21 +154,22 @@
                         <div class="img">
                             <img src="./img/xprm-bg.jpg" alt="">
                         </div>
-                        <a href="#">
+                        <a href="#" data-video-type="youtube"
+                           data-video-modal="https://www.youtube.com/embed/dQw4w9WgXcQ">
                             <img src="./img/green-item.svg" alt="">
                         </a>
 
                     </div>
 
                 </div>
-                <div  id="buy-place" class="buy-place follow-class">
+                <div id="buy-place" class="buy-place follow-class">
                     <span>איפה ניתן לקנות אותו?</span>
                     <p> את שלל המוצרים שלנו ניתן להשיג אצל
                         המפיצים המורשים. <br>
                         לפרטים נוספים ורשימת מפיצים עדכנים ניתן
                         ליצור איתנו קשר בטופס יצירת הקשר</p>
                 </div>
-                <div  id="consult-form" class="consult-form follow-class">
+                <div id="consult-form" class="consult-form follow-class">
                     <span>להתייעצות עם האגרונום שלנו</span>
                     <p dir="rtl"> האגרונומים שלנו ישמחו לייעץ לך על הEOS
                         ובכלל על הדברה יעילה וחכמה לגידולים שלך.
@@ -194,7 +204,7 @@
                             <div class="mailing">
                                 <label for="mailing">
                                     <input type="checkbox" name="mailing" id="mailing">
-                                     <p>אני מאשר קבלת דיוור</p>
+                                    <p>אני מאשר קבלת דיוור</p>
                                     <span></span>
                                 </label>
                             </div>
@@ -286,9 +296,15 @@
 <div class="modal-window modal-window--video">
     <div class="modal-container">
         <div class="embed-container">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--            <iframe src="https://player.vimeo.com/video/148751763" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
-            <video style="" src=""   playsinline="" type="video/mp4" poster="" ></video>
+            <iframe class="iframe iframe--youtube" width="100%" height="100%"
+                    src="" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <iframe class="iframe iframe--vimeo" src="" width="100%"
+                    height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen></iframe>
+            <video class="iframe iframe--video" style="" src="./img/videoplayback.mp4" controls="" playsinline=""
+                   type="video/mp4" poster=""></video>
 
 
         </div>

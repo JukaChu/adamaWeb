@@ -1346,6 +1346,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  cursor: pointer;
 
   img {
     width: 0.5208vw;
@@ -1491,6 +1492,13 @@ main {
       background: white;
 
     }
+  }
+}
+
+.iframe {
+  display: none;
+  &.active {
+    display: block;
   }
 }
 
