@@ -488,13 +488,25 @@
     }
   }
   .wrapper.wrapper--thanks {
-    background:  url('../img/mob-thanks-3.png') no-repeat center bottom, #752157;
+    //background:  url('../img/mob-thanks-3.png') no-repeat center bottom, #752157;
 
     background-size: 533.3333vw;
+    .bg-image {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      img {
+        width: 533.3333vw;
+      }
+    }
+  }
+  .bg-image {
+    img {
+      width: 533.3333vw;
+    }
   }
   .thanks-block {
     background: none;
-
   }
   .thanks-text {
     max-width: 88.8889vw;
